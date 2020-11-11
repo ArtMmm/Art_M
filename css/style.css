@@ -230,7 +230,7 @@ footer .container {
 }
 
 .skill .block .skill__block {
-  max-width: 360px;
+  width: 360px;
   min-height: 210px;
   margin-top: 10px;
 }
@@ -266,6 +266,52 @@ footer .container {
   background: url("../img/bg.png") center top/cover no-repeat;
   min-height: 298px;
   padding: 20px 0px;
+}
+
+.price .item {
+  position: absolute;
+}
+
+.price-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.price-item {
+  min-height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 30px;
+  width: 425px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.price-item__descr {
+  margin-top: 10px;
+}
+
+.price-item::before {
+  content: '';
+  position: absolute;
+  background: #0047AB;
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  left: -30px;
+  top: 1px;
 }
 
 .stages {
@@ -429,6 +475,18 @@ footer .container {
 .contact {
   min-height: 270px;
   padding: 20px 0px;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact .item {
+  position: absolute;
+}
+
+.contact .circle {
+  position: absolute;
+  right: 0px;
+  top: -20px;
 }
 
 .contact-block {
@@ -524,7 +582,7 @@ footer .container {
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 999px) {
   .header {
     padding-top: 70px;
   }
@@ -617,6 +675,11 @@ footer .container {
     right: 0;
     z-index: 9;
     margin-top: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .price-block {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
