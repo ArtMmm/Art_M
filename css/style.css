@@ -84,7 +84,7 @@ footer .container {
   font-weight: normal;
   font-size: 56px;
   line-height: 70px;
-  margin: 110px 0 0 20px;
+  margin: 110px 0 0 39px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,7 +103,7 @@ footer .container {
   font-weight: normal;
   font-size: 28px;
   line-height: 34px;
-  margin: 38px 0 0 20px;
+  margin: 38px 0 0 39px;
 }
 
 .full__btn {
@@ -117,7 +117,7 @@ footer .container {
   background: transparent;
   border: 1px solid #FFFFFF;
   color: #ffffff;
-  margin-top: 50px;
+  margin: 50px 0 0 39px;
 }
 
 .menu {
@@ -157,8 +157,8 @@ footer .container {
 
 .about .item {
   position: absolute;
-  width: 600px;
-  height: 420px;
+  max-width: 600px;
+  max-height: 420px;
   left: 130px;
   bottom: 0;
   z-index: -1;
@@ -201,9 +201,22 @@ footer .container {
 }
 
 .skill {
-  background: url("../img/bg.png") center top/cover no-repeat;
+  overflow: hidden;
   min-height: 500px;
   padding: 20px 0px;
+  position: relative;
+}
+
+.skill .item {
+  position: absolute;
+  right: 99px;
+}
+
+.skill .item-two {
+  bottom: -190px;
+  left: 200px;
+  -webkit-transform: rotate(70deg);
+          transform: rotate(70deg);
 }
 
 .skill .block {
@@ -217,7 +230,7 @@ footer .container {
 }
 
 .skill .block .skill__block {
-  width: 360px;
+  max-width: 360px;
   min-height: 210px;
   margin-top: 10px;
 }
@@ -249,9 +262,23 @@ footer .container {
   margin: 17px auto 0 auto;
 }
 
+.price {
+  background: url("../img/bg.png") center top/cover no-repeat;
+  min-height: 298px;
+  padding: 20px 0px;
+}
+
 .stages {
   min-height: 265px;
   padding: 20px 0px;
+  position: relative;
+  overflow: hidden;
+}
+
+.stages .item {
+  position: absolute;
+  bottom: -35px;
+  right: 80px;
 }
 
 .stages .block {
@@ -334,6 +361,7 @@ footer .container {
 }
 
 .portfolio {
+  background: url("../img/bg.png") center top/cover no-repeat;
   min-height: 920px;
   padding: 20px 0px;
 }
@@ -341,8 +369,8 @@ footer .container {
 .portfolio__block {
   margin-top: 5px;
   padding: 15px;
-  width: 330px;
-  height: 400px;
+  max-width: 330px;
+  min-height: 400px;
 }
 
 .portfolio__block-title {
@@ -359,7 +387,7 @@ footer .container {
 }
 
 .portfolio__block-img {
-  width: 320px;
+  max-width: 320px;
   height: 166px;
   margin-top: 25px;
 }
@@ -399,7 +427,6 @@ footer .container {
 }
 
 .contact {
-  background: url("../img/bg.png") center top/cover no-repeat;
   min-height: 270px;
   padding: 20px 0px;
 }
@@ -511,6 +538,9 @@ footer .container {
     min-height: 210px;
     margin-top: 0;
   }
+  img.item {
+    display: none;
+  }
   .hamburger {
     display: block;
     position: fixed;
@@ -594,6 +624,9 @@ footer .container {
 }
 
 @media (max-width: 490px) {
+  .full__title {
+    font-size: 45px;
+  }
   .about__block-text {
     margin-top: 20px;
   }
