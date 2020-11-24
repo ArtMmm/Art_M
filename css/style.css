@@ -604,6 +604,7 @@ footer .container {
   background: url("../img/bg.png") center top/cover no-repeat;
   min-height: 920px;
   padding: 20px 0px;
+  overflow: hidden;
 }
 
 .portfolio__block {
@@ -611,6 +612,7 @@ footer .container {
   padding: 15px;
   max-width: 330px;
   min-height: 400px;
+  overflow: hidden;
 }
 
 .portfolio__block-title {
