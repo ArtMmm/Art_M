@@ -343,6 +343,10 @@ footer .container {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .price-item__descr {
@@ -359,6 +363,13 @@ footer .container {
   border-radius: 50%;
   left: -30px;
   top: 1px;
+}
+
+.price-item._active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
 }
 
 .stages {
