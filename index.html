@@ -23,30 +23,30 @@
       </div>
       <!-- /.hamburger -->
       <nav >
-        <ul class="menu  "  >
+        <ul id="home" class="menu"  onclick="event.preventDefault()">
           <li class="menu-link">
-            <a href="#">Главная</a>
+            <a href="#home" onclick="scrollMenu('#home')">Главная</a>
           </li>
           <!-- /.menu-link -->
           <li class="menu-link">
-            <a href="#">Обо мне</a>
+            <a href="#about" onclick="scrollMenu('#about')">Обо мне</a>
           </li>
           <!-- /.menu-link -->
           <li class="menu-link">
-            <a href="#">Этапы</a>
+            <a href="#stages" onclick="scrollMenu('#stages')">Этапы</a>
           </li>
           <!-- /.menu-link -->
-          <img src="img/favicon.png" alt="favicon" />
+          <img src="img/favicon.png" alt="" />
           <li class="menu-link">
-            <a href="#">Навыки</a>
-          </li>
-          <!-- /.menu-link -->
-          <li class="menu-link">
-            <a href="#">Портфолио</a>
+            <a href="#skill" onclick="scrollMenu('#skill')">Навыки</a>
           </li>
           <!-- /.menu-link -->
           <li class="menu-link">
-            <a href="#">Контакты</a>
+            <a href="#portfolio" onclick="scrollMenu('#portfolio')">Портфолио</a>
+          </li>
+          <!-- /.menu-link -->
+          <li class="menu-link">
+            <a href="#contact" onclick="scrollMenu('#contact')">Контакты</a>
           </li>
           <!-- /.menu-link -->
         </ul>
@@ -60,7 +60,7 @@
     <!-- /.container -->
   </header>
   <!-- /.header -->
-  <section class=" about">
+  <section id="about" class=" about">
     <div class="container">
       <h2 class="titlesection">Обо мне</h2>
       <!-- /.titlesection -->
@@ -91,7 +91,7 @@
     <!-- /.container -->
   </section>
 
-  <section class="stages">
+  <section id="stages" class="stages">
     <div class="container">
       <h2 class="titlesection " >Этапы</h2>
       <!-- /.sectiontitle -->
@@ -197,7 +197,7 @@
           <!-- /.price-item__title -->
           <div class="price-item__price">Индивидуально</div>
           <!-- /.price-item__price -->
-          <div class="price-item__descr">Создам дизайн для вашего сайта/приложения.</div>
+          <div class="price-item__descr">Создам дизайн для вашего сайта/приложения...</div>
           <!-- /.price-item__descr -->
         </div>
         <!-- /.price-item -->
@@ -206,7 +206,7 @@
           <!-- /.price-item__title -->
           <div class="price-item__price">от 8000 руб.</div>
           <!-- /.price-item__price -->
-          <div class="price-item__descr">Содержbn основную информацию об организации.</div>
+          <div class="price-item__descr">Содержащий основную информацию об организации.</div>
           <!-- /.price-item__descr -->
         </div>
         <!-- /.price-item -->
@@ -216,7 +216,7 @@
     <!-- /.container -->
   </section>
   <!-- /.price -->
-  <section class="skill">
+  <section id="skill" class="skill">
     <div class="container">
       <h2 class="titlesection">Навыки для работы</h2>
       <!-- /.titlesection -->
@@ -295,7 +295,7 @@
     <!-- /.container -->
   </section>
   <!-- /.skill -->
-  <section class="portfolio">
+  <section id="portfolio" class="portfolio">
     <div class="container">
       <h2 class="titlesection">Портфолио</h2>
       <!-- /.titlesection -->
@@ -407,7 +407,7 @@
     <!-- /.container -->
   </section>
   <!-- /.portfolio -->
-  <section class="contact">
+  <section id="contact" class="contact">
     <div class="container">
       <h2 class="titlesection">Контакты</h2>
       <!-- /.titlesection -->
@@ -477,6 +477,8 @@
   </footer>
 
   <script src="js/script.js"></script>
+
+  <script src="js/scroll.js"></script>
 
   <script src="js/menu.js"></script>
 
