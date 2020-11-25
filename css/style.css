@@ -28,7 +28,9 @@ body {
   z-index: 2;
 }
 
-.titlesection div {
+.titlesection::before {
+  content: '';
+  display: block;
   position: absolute;
   left: calc( 50% - 18px);
   top: 4px;
@@ -810,7 +812,7 @@ footer .container {
     position: fixed;
     right: 20px;
     top: 20px;
-    z-index: 10;
+    z-index: 100;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     width: 26px;
