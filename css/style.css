@@ -668,6 +668,11 @@ footer .container {
   text-decoration: none;
 }
 
+.portfolio__block._active:nth-child(2) {
+  -webkit-transition: all 1.8s ease 0s;
+  transition: all 1.8s ease 0s;
+}
+
 .contact {
   min-height: 270px;
   padding: 20px 0px;
@@ -677,12 +682,14 @@ footer .container {
 
 .contact .item {
   position: absolute;
+  z-index: -1;
 }
 
 .contact .circle {
   position: absolute;
   right: 0px;
   top: -20px;
+  z-index: -1;
 }
 
 .contact-block {
@@ -891,5 +898,14 @@ footer .container {
   }
   .about__block-text {
     margin-top: 20px;
+  }
+  .full__title {
+    margin-left: 0;
+  }
+  .full__description {
+    margin-left: 0;
+  }
+  .full__btn {
+    margin-left: 0;
   }
 }
