@@ -650,8 +650,7 @@ footer .container {
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-top: 24px;
-  overflow-y: auto;
-  height: 104px;
+  min-height: 104px;
 }
 
 .portfolio__block a {
@@ -880,7 +879,7 @@ footer .container {
   }
   .menu_active {
     right: 0;
-    z-index: 9;
+    z-index: 99;
     margin-top: 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
