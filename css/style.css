@@ -895,11 +895,6 @@ footer .container {
   }
   .full__title {
     font-size: 45px;
-  }
-  .about__block-text {
-    margin-top: 20px;
-  }
-  .full__title {
     margin-left: 0;
   }
   .full__description {
@@ -907,5 +902,8 @@ footer .container {
   }
   .full__btn {
     margin-left: 0;
+  }
+  .about__block-text {
+    margin-top: 20px;
   }
 }
